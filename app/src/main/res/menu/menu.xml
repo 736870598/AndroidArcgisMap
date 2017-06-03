@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="选择图层" android:id="@+id/menu_select"/>
+	<item android:title="图形绘制" android:id="@+id/menu_paint"/>
+	<item android:title="空间查询" android:id="@+id/menu_serch"/>
+	<item android:title="原始地图" android:id="@+id/menu_native"/>
+	<item android:title="人口信息" android:id="@+id/menu_people"/>
+	<item android:title="面积信息" android:id="@+id/menu_area"/>
+
+</menu>

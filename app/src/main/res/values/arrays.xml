@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="map_color" translatable="false">
+        <item>#F1F1A2</item>
+        <item>#FAF569</item>
+        <item>#FFFF26</item>
+        <item>#FFB700</item>
+        <item>#FF5500</item>
+        <item>#F7057A</item>
+        <item>#F007E4</item>
+        <item>#A10EE6</item>
+        <item>#5D18C9</item>
+        <item>#071DAD</item>
+    </string-array>
+
+    <integer-array name="people_count" translatable="false">
+        <item>867</item>
+        <item>1293</item>
+        <item>2316</item>
+        <item>2884</item>
+        <item>3571</item>
+        <item>3831</item>
+        <item>4602</item>
+        <item>6568</item>
+        <item>8041</item>
+        <item>99999</item>
+    </integer-array>
+
+    <integer-array name="area_count" translatable="false">
+        <item>1</item>
+        <item>10</item>
+        <item>13</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>24</item>
+        <item>46</item>
+        <item>100</item>
+        <item>99999</item>
+    </integer-array>
+
+
+</resources>

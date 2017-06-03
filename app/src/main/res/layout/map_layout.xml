@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.esri.android.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </com.esri.android.map.MapView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/view_size_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/zoom_in"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/view_icon_big_01"/>
+
+        <ImageView
+            android:id="@+id/zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/view_icon_small_01"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/show_paint_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/text_bg"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/search_et"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:drawableLeft="@mipmap/search_icon"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:hint="请输入"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:drawablePadding="5dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/cancel_tv"
+            android:layout_toStartOf="@+id/cancel_tv" />
+
+        <ImageView
+            android:id="@+id/cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/cancel_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/people_tag"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/people_tag_layout" />
+
+    <include
+        android:id="@+id/area_tag"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/area_tag_layout" />
+
+</RelativeLayout>
